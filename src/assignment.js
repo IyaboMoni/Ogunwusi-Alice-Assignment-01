@@ -4,7 +4,7 @@ const assignment = {};
 // ========================
 
 /**
- * Challenge - 1
+ * Challenge - <
  *
  * Calculate and return the sum of the numbers between 1 and a destination.
  * (1 to destination) where destination is a number greater than 1 and destination is included when calculating the sum.
@@ -16,11 +16,14 @@ const assignment = {};
  */
 function sumOfNumbersTo(destination) {
     let sum = 0;
+    for (let i = 1; i <= destination; i++) {
+        sum += i ;
+    }
     return sum
 }
 
 
-// assignment.sumOfNumbersTo = sumOfNumbersTo;
+assignment.sumOfNumbersTo = sumOfNumbersTo;
 
 /**
  * Challenge - 2
@@ -68,11 +71,16 @@ function countEvenNumbersWithin(destination) {
  */
 function celsiusToFahrenheit(arrayOfNumbers) {
     let result = [];
+for (let num of arrayOfNumbers) {
+    let fah = num * 1.8 + 32;
+    fah = Math.trunc(fah);
+    result.push (fah);
 
+}
     return result;
 }
 
-// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
+assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 // ========================
 // DO NOT EDIT THIS BLOCK
